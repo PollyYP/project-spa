@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    margin:2%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+   
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'Michroma', sans-serif;
+}
+
+.desktopMenu {
+    display: flex;
+    margin-top: 1%;
+    list-style-type: none;
+ }
+
+.desktopMenuA {
+    
+    padding: 5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Michroma', sans-serif;
+}
+
+.desktopMenuA:hover {
+    opacity: 0.75;
+}
+
+.mobileMenu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 50px;
+    list-style-type: none;
+    text-align: center;
+    padding: 1rem 2rem;
+ }
+
+.mobileLi {
+    width: 100vw;
+    padding: 1rem 0;
+    border-bottom: solid 1px rgb(30, 31, 30);
+}
+
+.mobileA {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 0.85rem; 
+    font-family: 'Michroma', sans-serif;
+}
+
+.mobileA:hover {
+    opacity: 0.75;
+}
+
+.mobileMenuButton {
+    display: none;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .desktopMenu {
+        display: none !important;
+    }
+
+    .mobileMenu {
+        display: flex !important;
+    }
+
+    .mobileMenuButton {
+        display: block !important;
+    }
+}
+
